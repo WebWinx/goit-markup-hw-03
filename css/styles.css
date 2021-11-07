@@ -10,28 +10,26 @@ box-sizing: inherit;
 	--primary-text-color: #000000;
 	--title-text-color: #212121;
 	--accent-color: #2196F3;
-	--contacts-color:#757575;
 	--primary-bg-color:  #E5E5E5;;
-	--secondary-text-color: rgba(33, 33, 33, 1);
 	--color-text-description:#757575;
 	--bg-color-section: #2F303A;
-   --bg-color-team: #F5F4FA;}
+   --bg-color-team: #F5F4FA;
+   --btn-text-color: #FFFFFF;}
 	/*body settigs*/
 a {
 	text-decoration:none;}
 body {
-   background-color: (--primary-bg-color);
-   color: var(--primary-text-color);
-   font-family: Roboto, sans-serif;
-   font-style: normal;
+background-color: (--primary-bg-color);
+color: var(--primary-text-color);
+font-family: Roboto, sans-serif;
+font-style: normal;
+margin: 0;
 }
 ul {
    list-style: none;}
 .hero, .down {
 	background-color: var(--bg-color-section);
 	}
-
-
 /*header*/
 .logo {
 	font-family: Raleway;
@@ -75,7 +73,7 @@ letter-spacing: 0.02em;
 }
 /*site-contact*/
 .contacts-link {
-	color:var(--contacts-color);
+	color:var(--color-text-description);
    font-weight: 500;
    font-size: 14px;
    line-height: 1.2;
@@ -89,7 +87,7 @@ letter-spacing: 0.02em;
 	font-size: 14px;
    line-height: 1.7;
    letter-spacing: 0.03em;
-   color: #FFFFFF;
+   color:var(--btn-text-color);
 }
 .adress-link:hover, 
 .adress-link:focus {
@@ -109,10 +107,10 @@ letter-spacing: 0.02em;
 	text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;   
-   color: #FFFFFF;
+   color:var(--btn-text-color);
 }
 .primary-button {
-	color: #FFFFFF;
+	color:var(--btn-text-color);
 	background-color:var(--accent-color);
    font-weight: 700;
    font-size: 16px;
@@ -163,14 +161,15 @@ color:var(--color-text-description);
 
 .button {
 color: var(--primary-text-color);
-background-color: var(--primary-bg-color);
+background-color:var(--bg-color-team);
 cursor: pointer;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
+
 }
 .button:hover {
-	color: var(--primary-bg-color);
+	color:var(--bg-color-team);
 	background-color:var(--accent-color);
 }
 
@@ -179,7 +178,7 @@ line-height: 1.6;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: var(--secondary-text-color);
+color: var(--title-text-color);
 }
 
 .description-types {
