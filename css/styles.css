@@ -1,0 +1,228 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+:root {
+	--primary-text-color: #000000;
+	--title-text-color: #212121;
+	--accent-color: #2196F3;
+	--contacts-color:#757575;
+	--primary-bg-color:  #E5E5E5;;
+	--secondary-text-color: rgba(33, 33, 33, 1);
+	--color-text-description:#757575;
+	--bg-color-section: #2F303A;
+   --bg-color-team: #F5F4FA;}
+	/*body settigs*/
+a {
+	text-decoration:none;}
+body {
+   background-color: (--primary-bg-color);
+   color: var(--primary-text-color);
+   font-family: Roboto, sans-serif;
+   font-style: normal;
+}
+ul {
+   list-style: none;}
+.hero, .down {
+	background-color: var(--bg-color-section);
+	}
+
+
+/*header*/
+.logo {
+	font-family: Raleway;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.2;}
+
+.logo-studio-head {
+	color: var(--primary-text-color);
+}
+.logo-web {
+	color: var(--accent-color);
+}
+
+.logo-studio-foot {
+	color: var(--primary-bg-color);
+}
+/*site-nav*/
+.nav-link {
+	color:var(--title-text-color);
+	font-family: inherit;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+	color: var(--accent-color);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+}
+.current {
+color:var(--accent-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+/*site-contact*/
+.contacts-link {
+	color:var(--contacts-color);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+}
+.contacts-link:hover, 
+.contacts-link:focus {
+	color:var(--accent-color );
+}
+.adress-link {
+	font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+   color: #FFFFFF;
+}
+.adress-link:hover, 
+.adress-link:focus {
+	color:var(--accent-color );
+}
+/*hero*/
+.visualy-hidden {
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.4;
+	text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;   
+   color: #FFFFFF;
+}
+.primary-button {
+	color: #FFFFFF;
+	background-color:var(--accent-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.8;
+}
+/*features*/
+
+.features-title {
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--title-text-color);
+}
+.features-description {
+	color: var(--color-text-description);
+	font-size: 14px;
+   letter-spacing: 0.03em;
+	line-height: 1.7;
+	}
+
+/*actitvity*/
+.activity-title, .team-title{
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+/*team*/
+.team-section {
+	background-color: var(--bg-color-team);
+}
+.specialist-title {
+	font-size: 16px;
+	line-height: 1.18;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	color:var(--title-text-color);
+}
+.specialist-description {
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color:var(--color-text-description);
+}
+/*button*/
+
+.button {
+color: var(--primary-text-color);
+background-color: var(--primary-bg-color);
+cursor: pointer;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+}
+.button:hover {
+	color: var(--primary-bg-color);
+	background-color:var(--accent-color);
+}
+
+/*types-list*/
+.types-title {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--secondary-text-color);
+}
+
+.description-types {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.8;
+letter-spacing: 0.03em;
+color: var(--color-text-description);
+}
+/*footer*/
+address {
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#212121;*/ текст
+/*#757575;*/вт цвет текста
+/*#2196F3;*/ акцент
+/*#FFFFFF;*/основной
+/*#F5F4FA;*/вторичный цвет фонв
+/*rgba(255, 255, 255, 0.6);*/ футер цыет контактов
+/*rgba(33, 33, 33, 1);*/ для h2 заголовков
+/*rgba(117, 117, 117, 1);*/ цвет подрисей и параграфов
