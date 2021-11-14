@@ -25,6 +25,10 @@ h6,
 p {
     margin: 0;
 }
+.container {
+    width: 1170px;
+    margin: 15px;
+}
 .list {
     list-style: none;
     padding: 0;
@@ -70,36 +74,61 @@ ul {
 address {
     font-style: normal;
 }
-.hero {
-    background-color: var(--bg-color-section);
-    text-align: center;
-}
+
 /*header*/
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.site-contact {
+    display: flex;
+    margin-left: auto;
+}
+.header-connect {
+    margin-left: auto;
+}
 .logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    margin-right: 94px;
+    margin-left: 180px;
 }
 
 .logo-studio-primary {
     color: var(--primary-text-color);
+    padding: 25px 0;
 }
 .logo-web {
     color: var(--accent-color);
+    padding: 24px 0;
 }
 
 .logo-studio-secondary {
     color: var(--primary-bg-color);
 }
 /*site-nav*/
-.nav-link {
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.site-nav .nav-link {
     color: var(--title-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+.nav-item {
+    margin-right: 50px;
+    padding: 32px 0;
+}
+.nav-item:last-child {
+    margin-right: 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -112,8 +141,27 @@ address {
 .current {
     color: var(--accent-color);
 }
+.header-item:last-child {
+    margin: 0;
+}
 
 /*site-contact*/
+.header-connect {
+    display: flex;
+    display: block;
+}
+.site-contact li {
+    margin: 0 auto;
+    padding: 0;
+}
+.contact-item {
+    margin-right: 50px;
+    padding: 32px 0;
+}
+.contact-item:last-child {
+    margin: 0;
+}
+
 .contact-link {
     color: var(--color-text-description);
     font-weight: 500;
@@ -135,17 +183,24 @@ address {
 .adress-link:focus {
     color: var(--accent-color);
 }
+
 /*hero*/
 
+.hero {
+    background-color: var(--bg-color-section);
+    text-align: center;
+    width: 1170px;
+    margin: 15px;
+}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--btn-text-color);
-    margin: 30px;
+    margin-bottom: 30px;
+    margin: top 200px;
 }
 .primary-button {
     color: var(--btn-text-color);
@@ -154,14 +209,30 @@ address {
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
+    width: 200px;
+    padding: 10px 32px;
+    border: none;
 }
 /*features*/
+.features-list {
+    display: flex;
+    align-items: center;
+}
+.features-item {
+    width: 270px;
+    padding-top: 94px;
+    margin-left: 30px;
+}
+.features-item:last-child {
+    margin-left: 0;
+}
 .features-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin-bottom: 10px;
 }
 .features-description {
     color: var(--color-text-description);
@@ -171,16 +242,31 @@ address {
 }
 
 /*actitvity*/
+.activity-list {
+    display: flex;
+    align-items: center;
+}
+.activity-item {
+    margin-left: 30px;
+}
 .section-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    padding-top: 94px;
 }
 /*team*/
+.team-list {
+    display: flex;
+    align-items: center;
+}
 .team-section {
     background-color: var(--bg-color-team);
+}
+.team-item {
+    margin-left: 30px;
 }
 .specialist-title {
     font-size: 16px;
@@ -196,13 +282,27 @@ address {
     color: var(--color-text-description);
 }
 /*button*/
-
+.button-exclude {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.button-item {
+    margin-top: 94px;
+}
+.button-exclude .button-item + .button-item {
+    margin-right: 8px;
+}
 .secondary-button {
     color: var(--primary-text-color);
     background-color: var(--bg-color-team);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
 }
 .secondary-button:hover {
     color: var(--bg-color-team);
