@@ -100,7 +100,6 @@ address {
     font-size: 26px;
     line-height: 1.2;
     margin-right: 94px;
-    margin-left: 180px;
     display: block;
 }
 
@@ -110,7 +109,6 @@ address {
 }
 .logo-web {
     color: var(--accent-color);
-    padding: 24px 0;
 }
 
 .logo-studio-secondary {
@@ -135,9 +133,6 @@ address {
     margin-right: 50px;
     padding: 32px 0;
 }
-.site-nav .nav-item + .nav-item {
-    margin-left: 50px;
-}
 .nav-item:last-child {
     margin-right: 0;
 }
@@ -160,10 +155,7 @@ address {
 .header-connect {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-}
-.site-contact li {
-    padding: 0;
+    margin: auto;
 }
 .contact-item {
     margin-right: 50px;
@@ -200,8 +192,9 @@ address {
 .hero {
     background-color: var(--bg-color-section);
     text-align: center;
-    width: 1170px;
     margin: 15px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     font-weight: 900;
@@ -212,6 +205,9 @@ address {
     color: var(--btn-text-color);
     margin-bottom: 30px;
     margin: top 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .primary-button {
     color: var(--btn-text-color);
@@ -223,6 +219,8 @@ address {
     width: 200px;
     padding: 10px 32px;
     border: none;
+    display: block;
+    margin: auto;
 }
 /*features*/
 .features-list {
@@ -319,6 +317,10 @@ address {
 }
 
 /*types-list*/
+.types-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .types-title {
     font-size: 18px;
     line-height: 2;
