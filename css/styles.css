@@ -25,10 +25,7 @@ h6,
 p {
     margin: 0;
 }
-.container {
-    width: 1170px;
-    margin: 15px;
-}
+
 .list {
     list-style: none;
     padding: 0;
@@ -74,7 +71,16 @@ ul {
 address {
     font-style: normal;
 }
-
+.container {
+    width: 12000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section {
+    padding: 94px 0;
+}
 /*header*/
 .header-container {
     display: flex;
@@ -83,6 +89,7 @@ address {
 .site-contact {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .header-connect {
     margin-left: auto;
@@ -94,11 +101,12 @@ address {
     line-height: 1.2;
     margin-right: 94px;
     margin-left: 180px;
+    display: block;
 }
 
 .logo-studio-primary {
     color: var(--primary-text-color);
-    padding: 25px 0;
+    padding: 24px 0;
 }
 .logo-web {
     color: var(--accent-color);
@@ -127,6 +135,9 @@ address {
     margin-right: 50px;
     padding: 32px 0;
 }
+.site-nav .nav-item + .nav-item {
+    margin-left: 50px;
+}
 .nav-item:last-child {
     margin-right: 0;
 }
@@ -148,18 +159,18 @@ address {
 /*site-contact*/
 .header-connect {
     display: flex;
-    display: block;
+    align-items: center;
+    margin: 0 auto;
 }
 .site-contact li {
-    margin: 0 auto;
     padding: 0;
 }
 .contact-item {
     margin-right: 50px;
     padding: 32px 0;
 }
-.contact-item:last-child {
-    margin: 0;
+.header-connect .contact-item + .contact-item {
+    margin-left: 50px;
 }
 
 .contact-link {
@@ -220,7 +231,6 @@ address {
 }
 .features-item {
     width: 270px;
-    padding-top: 94px;
     margin-left: 30px;
 }
 .features-item:last-child {
@@ -255,7 +265,6 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    padding-top: 94px;
 }
 /*team*/
 .team-list {
