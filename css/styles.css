@@ -291,16 +291,13 @@ address {
 /*button*/
 .button-exclude {
     display: flex;
-    text-align: center;
-    align-items: center;
+    margin-bottom: 50px;
     justify-content: center;
 }
-.button-item {
-    margin-top: 94px;
-}
-.button-exclude .button-item + .button-item {
+.button-item:not(:last-child) {
     margin-right: 8px;
 }
+
 .secondary-button {
     color: var(--primary-text-color);
     background-color: var(--bg-color-team);
@@ -361,6 +358,7 @@ address {
 }
 .footer-wrapper {
     background-color: var(--bg-color-section);
+    padding: 60px 0;
 }
 .logo-footer {
     padding-top: 60px;
@@ -371,4 +369,3 @@ address {
     margin-right: 94px;
     display: block;
     margin-bottom: 2px;
-}
