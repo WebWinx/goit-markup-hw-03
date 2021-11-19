@@ -123,7 +123,6 @@ header {
 }
 .nav-link {
     display: block;
-    padding: 32px 0;
     color: var(--title-text-color);
     font-family: inherit;
     font-weight: 500;
@@ -172,21 +171,10 @@ header {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 32px 0;
     display: block;
 }
 .contact-link:hover,
 .contact-link:focus {
-    color: var(--accent-color);
-}
-.address-link {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--btn-text-color);
-}
-.adress-link:hover,
-.adress-link:focus {
     color: var(--accent-color);
 }
 
@@ -235,7 +223,7 @@ header {
     width: 270px;
     margin-right: 30px;
 }
-.features-item:last-child {
+.features-item:not(:last-child) {
     margin-right: 30px;
 }
 .features-title {
@@ -264,9 +252,7 @@ header {
 .activity-item:not(:last-child) {
     margin-right: 30px;
 }
-.activity-item {
-    margin-right: 30px;
-}
+
 .section-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -283,7 +269,6 @@ header {
     background-color: var(--bg-color-team);
 }
 .team-item {
-    margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -387,18 +372,42 @@ header {
     border-bottom: 1px solid var(--portfolio-border-color);
 }
 /*footer*/
-address {
-    font-style: normal;
-    margin-top: 20px;
-}
-.footer-wrapper {
+footer {
     background-color: var(--bg-color-section);
     padding: 60px 0;
 }
 
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
 .address-item {
     margin-bottom: 9px;
 }
 .address-item:last-child {
     margin-bottom: 0;
+}
+.address-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--hover-text-color);.
+}
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent-color);
+}
+.footer-contact-link {
+    display: block;
+    letter-spacing: 0.03em;
+    color: var(--color-text-description);
+}
+.address-link {
+color: var(--bg-color-team);
 }
