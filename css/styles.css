@@ -8,6 +8,7 @@
     --bg-color-team: #f5f4fa;
     --btn-text-color: #ffffff;
     --portfolio-border-color: #eeeeee;
+    --section-border-color: #ececec;
 }
 html {
     box-sizing: border-box;
@@ -81,7 +82,7 @@ ul {
 }
 /*header*/
 header {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--section-border-color);
 }
 .header-container {
     display: flex;
